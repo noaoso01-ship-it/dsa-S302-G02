@@ -1,4 +1,5 @@
-#include "sample_lib.h"
+#include "sample_lib.h"º
+#include "functions.c"
 #include <sys/stat.h>
 
 void createleak(){
@@ -49,9 +50,9 @@ char origin_position[20];
     switch (origin_position[0]) {  // Comparem només la primera lletra per simplificar
         case 'a':  // adreça
             printf("Has triat adreça. Demanaré carrer i número...\n");
-            // Aquí crides a la funció que demana carrer i número
+            get_adress(); 
             break;
-            
+             
         case 'c':  // coordenada
             printf("Not implemented yet\n");
             break;
